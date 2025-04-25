@@ -140,13 +140,13 @@ st.write(f"こんにちは、{name}さん！")
 # st.header("インタラクティブ機能")
 
 # プログレスバー
-# st.subheader("プログレスバー")
-# progress = st.progress(0)
-# if st.button("進捗をシミュレート"):
-#     for i in range(101):
-#         time.sleep(0.01)
-#         progress.progress(i / 100)
-#     st.balloons()
+st.subheader("プログレスバー")
+progress = st.progress(0)
+if st.button("進捗をシミュレート"):
+    for i in range(101):
+        time.sleep(0.01)
+        progress.progress(i / 100)
+    st.balloons()
 
 # ファイルアップロード
 # st.subheader("ファイルアップロード")
