@@ -15,7 +15,7 @@ import time
 # ============================================
 # タイトルと説明
 # ============================================
-st.title("Streamlit 初心者向けデモ　Commitテストですわ")
+st.title("Streamlit 初心者向けデモ 改竄テストテストテスト")
 st.markdown("### コメントを解除しながらStreamlitの機能を学びましょう")
 st.markdown("このデモコードでは、コメントアウトされた部分を順番に解除しながらUIの変化を確認できます。")
 
@@ -140,13 +140,13 @@ st.write(f"こんにちは、{name}さん！")
 # st.header("インタラクティブ機能")
 
 # プログレスバー
-# st.subheader("プログレスバー")
-# progress = st.progress(0)
-# if st.button("進捗をシミュレート"):
-#     for i in range(101):
-#         time.sleep(0.01)
-#         progress.progress(i / 100)
-#     st.balloons()
+st.subheader("プログレスバー")
+progress = st.progress(0)
+if st.button("進捗をシミュレート"):
+    for i in range(101):
+        time.sleep(0.01)
+        progress.progress(i / 100)
+    st.balloons()
 
 # ファイルアップロード
 # st.subheader("ファイルアップロード")
